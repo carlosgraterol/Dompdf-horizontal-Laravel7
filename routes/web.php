@@ -21,4 +21,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pdf', 'PDFController@PDF')->name('decargarPDF');
-Route::get('/pdfProductos', 'PDFController@PDFProductos')->name('decargarPDFProductos');
+Route::get('/pdfproductos', 'PDFController@PDFProductos')->name('decargarPDFProductos');
+Route::get('/pdfproductoshorizontal', 'PDFController@PDFProductosHorizontal')->name('decargarPDFProductosHorizontal');
+Route::get('/guardarpdf', 'PDFController@guardarpdf')->name('guardarpdf');
+
+
